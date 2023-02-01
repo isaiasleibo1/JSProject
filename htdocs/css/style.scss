@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 200ms;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Montserrat;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/mobileMenu";
+
+@import "partials/contact";
+@import "partials/galeria";
+
+@import "partials/carouselScroll";
+@import "partials/carouselSimple";
+@import "partials/carouselWithDescription";
+@import "partials/carouselContainer";
+
+@import "partials/cart";
+@import "partials/mobileCart";
+
+.cartAlert {
+    opacity: 0;
+    padding: 5px;
+    background-color: rgb(56, 56, 56);
+    position: absolute;
+    top: 40px;
+    align-self: center;
+    border-radius: 12px;
+    margin: 10px;
+    transition: all 0ms;
+    transition: opacity 200ms;
+    text-align: center;
+    z-index: 3;
+    border: 1px solid white;
+
+    p {
+        color: white;
+    }
+}
+
+#cartBuy {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 260px;
+    height: fit-content;
+    background-color: rgb(56, 56, 56);
+    border-radius: 1em;
+    padding: 1em;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 4;
+
+    #cartBuyCloser {
+        color: red;
+        position: absolute;
+        width: fit-content;
+        right: 8px;
+        top: 8px;
+        background-color: black;
+        padding: 1px 4.5px;
+        border-radius: 50%;
+    }
+
+    label {
+        font-weight: bolder;
+        color: white;
+    }
+
+    input {
+        width: calc(100% - 2em);
+        font-family: Montserrat;
+        font-weight: bolder;
+        border: 0;
+        outline: 0;
+        border-radius: 6px;
+        height: 30px;
+        margin-top: 2px;
+        margin-bottom: 6px;
+        padding: 0 1em;
+    }
+
+    button {
+        background-color: white;
+        font-family: Montserrat;
+        width: fit-content;
+        font-weight: bolder;
+        border-radius: 8px;
+        border: 0;
+        padding: 5px;
+        margin-left: calc((260px / 2) - (68.75px / 2));
+        margin-top: 10px;
+    }
+}
+
+#filterContainer {
+    margin-bottom: 8px;
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 820px) {
+    #filterContainer {
+        width: fit-content;
+        margin-left: calc(50% - 108.1px) !important;
+    }
+}
+
+
+#ryzenCheckbox,
+#intelCheckbox {
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    width: 106px;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 200ms;
+
+    img {
+        width: 100px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 10px;
+        padding: 2px;
+    }
+}
+
+.checkboxActive {
+    border: 1px solid rgb(0, 102, 255) !important;
+    background: linear-gradient(rgb(228, 228, 228), rgb(102, 102, 102));
+}
+
+#dayNightButton {
+    position: absolute;
+    display: flex;
+    left: 10px;
+}

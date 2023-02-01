@@ -1,0 +1,276 @@
+#mobileHeader {
+    margin-bottom: 0;
+}
+
+#mobileMain {
+    display: flex;
+    flex-direction: column;
+    transition: height 0ms;
+}
+
+#cartMain {
+    display: grid;
+    justify-items: center;
+    height: fit-content;
+    overflow-x: scroll;
+
+    :nth-child(1) {
+        .shoppingCartItem {
+            margin-top: 20px;
+        }
+    }
+
+    :nth-last-child(1) {
+        .shoppingCartItem {
+            margin-bottom: 20px;
+        }
+    }
+
+    .shoppingCartItem {
+        margin: 7px 0;
+        background-color: rgb(32, 32, 32);
+        color: white;
+        border-radius: 1em;
+        display: grid;
+        grid-template-areas:
+            "img title price"
+            "input value delete";
+        width: 370px;
+        grid-template-columns: 60px 1fr 80px;
+        padding: 10px;
+        padding-bottom: 2px;
+        align-items: center;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.45);
+
+        .shopping-cart-image {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            padding: 5px;
+            margin: 0 auto;
+            border-radius: 1em;
+            object-fit: contain;
+            grid-area: img;
+            position: relative;
+            left: 0;
+        }
+
+        :nth-child(2) {
+            grid-area: title;
+
+            .shopping-cart-item-title {
+                text-align: center;
+                font-size: 16px;
+                margin: 0 10px;
+            }
+        }
+
+        .price {
+            text-align: center;
+            grid-area: price;
+        }
+
+        .input-container {
+            width: fit-content;
+            margin: 8px auto;
+            grid-area: input;
+
+            .shopping-cart-quantity-input {
+                width: 30px;
+                height: 30px;
+                border: 0;
+                border-radius: 50%;
+                font-family: Montserrat;
+                font-weight: bolder;
+                font-size: 15px;
+                text-align: center;
+                outline: none;
+            }
+        }
+
+        :nth-child(5) {
+            display: flex;
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 5px;
+            grid-area: value;
+            margin-left: auto;
+
+            .moreValueInput {
+                background: linear-gradient(rgb(28, 138, 0), rgb(0, 185, 114));
+                width: 25px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                margin: 0 2.5px;
+                align-items: center;
+                border-radius: 6px;
+                transition: all 200ms;
+
+                p {
+                    width: min-content;
+                }
+            }
+
+            .moreValueInput:hover {
+                transform: scale(1.05);
+            }
+
+            .moreValueInput:active {
+                transform: scale(1);
+            }
+
+            .lessValueInput {
+                @extend .moreValueInput;
+                background: linear-gradient(rgb(255, 166, 0), rgb(209, 118, 15));
+                margin-bottom: 0;
+
+            }
+        }
+
+        :nth-child(6) {
+            margin: 0 auto;
+            width: fit-content;
+            padding: 7px;
+            grid-area: delete;
+
+            .btn-delete {
+                width: 25px;
+                height: 25px;
+                border: 0;
+                background: linear-gradient(rgb(255, 0, 0), rgb(255, 111, 111));
+                font-family: Montserrat;
+                color: white;
+                font-weight: bolder;
+                border-radius: 7px;
+                transition: all 200ms;
+            }
+
+            .btn-delete:hover {
+                transform: scale(1.05);
+            }
+
+            .btn-delete:active {
+                transform: scale(1);
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+
+            grid-template-areas:
+                "img title title"
+                "img price price"
+                "input value delete";
+            grid-template-columns: 60px 1fr 64px !important;
+
+            .shopping-cart-item-title {
+                font-size: 14px;
+            }
+
+            .price {
+                font-size: 12px;
+            }
+
+            .shopping-cart-quantity-input {
+                width: 25px !important;
+                height: 25px !important;
+            }
+
+            .moreValueInput,
+            .lessValueInput {
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            .btn-delete {
+                height: 17px !important;
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            width: 350px;
+        }
+
+        @media screen and (max-width: 395px) {
+
+            grid-template-areas:
+                "img title title"
+                "img price price"
+                "input value delete";
+            grid-template-columns: 60px 1fr 64px !important;
+
+            .shopping-cart-item-title {
+                font-size: 14px;
+            }
+
+            .price {
+                font-size: 12px;
+            }
+
+            .shopping-cart-quantity-input {
+                width: 25px !important;
+                height: 25px !important;
+            }
+
+            .moreValueInput,
+            .lessValueInput {
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            .btn-delete {
+                height: 17px !important;
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            width: 310px;
+        }
+
+        @media screen and (max-width: 335px) {
+            width: 290px !important;
+        }
+    }
+}
+
+
+
+
+#mobileTotalContainer {
+    background: #252525;
+    color: white;
+    width: 100vw;
+    padding: 1em 0;
+    bottom: 50px;
+    text-align: center;
+    position: fixed;
+    font-size: 14px;
+
+    #shopping-cart-total {
+        font-size: 12px;
+    }
+
+    #buyButton {
+        margin-top: 5px;
+        border: 0;
+        background-color: white;
+        font-family: Montserrat;
+        font-weight: bolder;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    #buyButton:hover {
+        transform: scale(1.05);
+    }
+
+    #buyButton:active {
+        transform: scale(1);
+    }
+}
+
+#mobileFooter {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}

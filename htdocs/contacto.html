@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="MasterShop es una tienda de electronica online en la que podrás conseguir los mejores dispositivos electronicos al mejor precio.">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Título -->
+  <title>Contacto - MasterShop</title>
+</head>
+
+<body>
+
+  <header id="formheader">
+    <div id="headerItemContainer">
+      <div class="mobileMenuOpener headerItem">
+        <p>
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </p>
+      </div>
+      <div class="mobileMenuCloser headerItem">
+        <p>
+          <i class="fa-solid fa-xmark fa-xl"></i>
+        </p>
+      </div>
+      <div id="dayNightButton" class="headerItem pageRedirect">
+        <p>
+          <i class="fa-solid fa-sun"></i>
+        </p>
+      </div>
+      <div class="headerItem pageRedirect" onclick="location.href='.'">
+        <p>
+          <i class="fa-solid fa-house"></i>Inicio
+        </p>
+      </div>
+      <div class="headerItem pageRedirect">
+        <p>
+          <i class="fa-solid fa-user"></i>Sobre Nosotros
+        </p>
+      </div>
+      <div class="headerItem pageRedirect">
+        <p>
+          <i class="fa-solid fa-envelope"></i>Contacto
+        </p>
+      </div>
+      <div class="headerItem pageRedirect" onclick="location.href='./galeria'">
+        <p>
+          <i class="fa-solid fa-camera"></i>Galería
+        </p>
+      </div>
+      <!-- Botón abrir carrito -->
+      <div id="cartButtonContainer" class="headerItem">
+        <div id="cartBubble"></div>
+        <div id="cartButton">
+          <p>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Carrito -->
+  <div id="cart">
+    <div id="closeCart">
+      <i class="fa-solid fa-xmark fa-lg"></i>
+    </div>
+    <!-- Carrito texto vacío -->
+    <div id="cartNothingPart">
+      <h2>No hay nada en su carrito.</h2>
+    </div>
+    <!-- Items del carrito -->
+    <div id="cartItemsContainer"></div>
+    <!-- Parte de abajo del carrito -->
+    <div id="cartDownPart">
+      <div id="cartArrows">
+        <h2 id="cartItemCounter">Items:</h2>
+        <div>
+          <button id="mostrarMenos">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+          </button>
+          <button id="mostrarMas">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Total del carrito -->
+      <div id="totalContainer">
+        <p id="totalText">Total</p>
+        <p id="shopping-cart-total">$0</p>
+        <button id="shopping-cart-buy">Comprar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menú header para celulares -->
+  <div id="mobileMenu">
+    <div class="headerItem pageRedirect" onclick="location.href='.'">
+      <p>
+        <i class="fa-solid fa-house"></i>Inicio
+      </p>
+    </div>
+    <div class="headerItem pageRedirect">
+      <p>
+        <i class="fa-solid fa-user"></i>Sobre Nosotros
+      </p>
+    </div>
+    <div class="headerItem pageRedirect" onclick="location.href='./contacto'">
+      <p>
+        <i class="fa-solid fa-envelope"></i>Contacto
+      </p>
+    </div>
+    <div class="headerItem pageRedirect" onclick="location.href='./galeria'">
+      <p>
+        <i class="fa-solid fa-camera"></i>Galería
+      </p>
+    </div>
+
+    <div id="dayNightButtonMobile" class="headerItem pageRedirect">
+      <p>
+        <i class="fa-solid fa-sun"></i>Tema
+      </p>
+    </div>
+    <h2 id="mobileHeaderTitle">MasterShop</h2>
+  </div>
+
+  <main id="formmain">
+    <!-- Formulario -->
+    <div id="form">
+      <form action="https://formspree.io/f/mvoyewzv" method="post">
+        <label for="nombre">Nombre</label>
+        <input class="forminput" type="text" name="nombre" id="nombre" autocomplete="off" required>
+        <label for="apellido">Apellido</label>
+        <input class="forminput" type="text" name="apellido" id="apellido" autocomplete="off" required>
+        <label for="email">E-Mail</label>
+        <input class="forminput" type="email" autocomplete="off" id="email" required>
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" cols="35" rows="12" required></textarea>
+        <button type="submit" name="enviar" id="enviar">Enviar</button>
+      </form>
+    </div>
+    <script>
+      // Esta script comprueba los campos del formulario y recarga la página
+      const submitButton = document.querySelector('#enviar');
+      submitButton.addEventListener('click', submitButtonClicked);
+
+      function submitButtonClicked() {
+        const nombre = document.querySelector('#nombre');
+        const apellido = document.querySelector('#apellido');
+        const email = document.querySelector('#email');
+        const comentario = document.querySelector('#comentario');
+        if (nombre.value != "" && apellido.value != "" && email.value != "" && email.value.indexOf('@') >= 0 && email.value.indexOf('.') >= 0 && comentario.value != "") {
+          console.log('Todos los valores coinciden');
+          setTimeout(() => {
+            document.querySelector('form').reset();
+            docuent.querySelector('textarea').reset();
+          }, 500)
+        }
+      };
+    </script>
+  </main>
+
+  <footer>
+    <div class="social-media">
+      <div class="social-media-app">
+        <img class="item-img" src="./img/instagram.webp" alt="Instagram">
+        <p>Instagram</p>
+      </div>
+      <div class="social-media-app">
+        <img class="item-img" src="./img/facebook.webp" alt="Facebook">
+        <p>Facebook</p>
+      </div>
+      <div class="social-media-app">
+        <img class="item-img" src="./img/whatsapp.webp" alt="WhatsApp">
+        <p>WhatsApp</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cartAlert" id="cartAlert1"></div>
+  <div class="cartAlert" id="cartAlert2"></div>
+  <div id="cartBuy">
+    <div id="cartBuyCloser">
+      <i class="fa-solid fa-xmark fa-lg"></i>
+    </div>
+    <label for="cardNumber">Número de la tarjeta</label>
+    <input autocomplete="off" type="number" name="cardNumber" id="cardNumber" required>
+    <label for="cardOwner">Nombre</label>
+    <input autocomplete="off" type="text" name="cardOwner" id="cardOwner" required>
+    <label for="cardExpiration">Fecha de expiración</label>
+    <input autocomplete="off" type="datetime" name="cardExpiration" id="cardExpiration" required>
+    <label for="cardCVC">CVC</label>
+    <input autocomplete="off" type="number" name="cardCVC" id="cardCVC" required>
+    <button id="cardSubmit">Comprar</button>
+  </div>
+
+  <script src="./js/refreshPage.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/mobileMenu.js"></script>
+  <script src="https://kit.fontawesome.com/aaf7184bfe.js" crossorigin="anonymous"></script>
+  <script src="./js/alert.js"></script>
+  <script src="./js/cardDiv.js"></script>
+
+  <script src="./js/dayNightMode.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-color: #181a1b;
+}
+
+.carouselTitle {
+    color: white;
+}
+
+.card {
+    .ver-mas-button {
+        background-color: #181a1b !important;
+        color: white;
+    }
+}
+
+#intelCheckbox,
+#ryzenCheckbox {
+    background-color: #6b6b6b;
+}
+
+.itemsContainer {
+    background: linear-gradient(rgb(133, 133, 133), rgb(58, 58, 58)) !important;
+}
+
+* {
+    color: white;
+}
+
+#productMain {
+    border: 1px solid rgba(158, 158, 158, 0.2);
+}
+
+.shopping-cart-quantity-input {
+    color: black;
+}
+
+#buyButton {
+    color: black;
+}
+
+#shopping-cart-buy {
+    color: black;
+}
+
+#itemTitle,
+#itemDescription,
+#itemPrice {
+    color: white !important;
+}
+
+#cardSubmit {
+    color: black;
+}
