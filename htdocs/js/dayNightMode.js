@@ -14,7 +14,7 @@ createElement.outerHTML = '<link rel="stylesheet" id="dayNightStyle">';
 let dayNightStyle;
 setTimeout(() => {
     dayNightStyle = document.querySelector('#dayNightStyle');
-}, 10)
+}, 1)
 
 
 console.log(createElement);
@@ -28,7 +28,7 @@ if (!localStorage.getItem('tema')) {
     if (localStorage.getItem('tema').includes('sun')) {
         setTimeout(() => {
             dayNightStyle.href = '#';
-        }, 20)
+        }, 2)
 
 
     } else if (localStorage.getItem('tema').includes('moon')) {
@@ -36,7 +36,7 @@ if (!localStorage.getItem('tema')) {
         dayNightButtonMobile.innerHTML = dayNightButtonMobile.innerHTML.replace('sun', localStorage.getItem('tema'));
         setTimeout(() => {
             dayNightStyle.href = `${pointOrDoublePoint}/css/dayNight.css`;
-        }, 30)
+        }, 2)
 
     } else {
         throw new Error('no')
