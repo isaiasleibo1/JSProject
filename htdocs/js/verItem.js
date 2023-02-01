@@ -24,7 +24,7 @@ const camara = document.querySelector('#camara');
 
 
 const request = new XMLHttpRequest();
-request.open('GET', 'https://mastershop.gq/js/json/items.json');
+request.open('GET', './js/json/items.json');
 request.responseType = 'json';
 request.send();
 

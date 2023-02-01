@@ -2,7 +2,7 @@
     {
         "titulo": "Intel Celeron G5905",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_CELERON_G5905_9999-removebg-preview.webp",
+        "imagen": "./img/INTEL_CELERON_G5905_9999-removebg-preview.webp",
         "precio": "$9.999",
         "litografia": "14 nm",
         "cantidadDeNucleos": "2",
@@ -16,7 +16,7 @@
     {
         "titulo": "Intel Pentium Gold G6405",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_PENTIUM_GOLD_G6405_15849-removebg-preview.webp",
+        "imagen": "./img/INTEL_PENTIUM_GOLD_G6405_15849-removebg-preview.webp",
         "precio": "$15.849",
         "litografia": "14 nm",
         "cantidadDeNucleos": "2",
@@ -30,7 +30,7 @@
     {
         "titulo": "Intel Core i3 10100F",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_CORE_I3_10100F_17990-removebg-preview.webp",
+        "imagen": "./img/INTEL_CORE_I3_10100F_17990-removebg-preview.webp",
         "precio": "$17.990",
         "litografia": "14 nm",
         "cantidadDeNucleos": "4",
@@ -44,7 +44,7 @@
     {
         "titulo": "Intel Core i3 12100F",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_CORE_I3_12100F_26990-removebg-preview.webp",
+        "imagen": "./img/INTEL_CORE_I3_12100F_26990-removebg-preview.webp",
         "precio": "$26.990",
         "litografia": "Intel 7",
         "cantidadDeNucleos": "4",
@@ -58,7 +58,7 @@
     {
         "titulo": "Intel Core i5 7600K",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_CORE_I5-7600K_35990-removebg-preview.webp",
+        "imagen": "./img/INTEL_CORE_I5-7600K_35990-removebg-preview.webp",
         "precio": "$35.990",
         "litografia": "14 nm",
         "cantidadDeNucleos": "4",
@@ -72,7 +72,7 @@
     {
         "titulo": "Intel Core i5 10600K",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_CORE_I5_10600K_58990-removebg-preview.webp",
+        "imagen": "./img/INTEL_CORE_I5_10600K_58990-removebg-preview.webp",
         "precio": "$58.990",
         "litografia": "14 nm",
         "cantidadDeNucleos": "6",
@@ -86,7 +86,7 @@
     {
         "titulo": "Intel Core i5 11600K",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_CORE_I5_11600K_66990-removebg-preview.webp",
+        "imagen": "./img/INTEL_CORE_I5_11600K_66990-removebg-preview.webp",
         "precio": "$66.990",
         "litografia": "14 nm",
         "cantidadDeNucleos": "6",
@@ -99,7 +99,7 @@
     },
     {
         "titulo": "Intel Core i7 10700F",
-        "imagen": "https://mastershop.gq/img/INTEL_CORE_I7_10700F_70990-removebg-preview.webp",
+        "imagen": "./img/INTEL_CORE_I7_10700F_70990-removebg-preview.webp",
         "tipo": "intel",
         "precio": "$70.990",
         "litografia": "14 nm",
@@ -114,7 +114,7 @@
     {
         "titulo": "Intel Core i7 11700KF",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_CORE_I7_11700KF_83990-removebg-preview.webp",
+        "imagen": "./img/INTEL_CORE_I7_11700KF_83990-removebg-preview.webp",
         "precio": "$83.990",
         "litografia": "14 nm",
         "cantidadDeNucleos": "8",
@@ -128,7 +128,7 @@
     {
         "titulo": "Intel Core i9 10900F",
         "tipo": "intel",
-        "imagen": "https://mastershop.gq/img/INTEL_CORE_I9_10900F_99990-removebg-preview.webp",
+        "imagen": "./img/INTEL_CORE_I9_10900F_99990-removebg-preview.webp",
         "precio": "$99.990",
         "litografia": "14 nm",
         "cantidadDeNucleos": "10",
@@ -142,7 +142,7 @@
     {
         "titulo": "Notebook Apple MacBook Pro",
         "tipo": "notebook",
-        "imagen": "https://mastershop.gq/img/NOTEBOOK_APPLE_MACBOOK_PRO-removebg-preview.webp",
+        "imagen": "./img/NOTEBOOK_APPLE_MACBOOK_PRO-removebg-preview.webp",
         "precio": "$578.029",
         "procesador": "M1",
         "ram": "8GB DDR4",
@@ -154,7 +154,7 @@
     {
         "titulo": "Notebook Asus X515EA-EJ711",
         "tipo": "notebook",
-        "imagen": "https://mastershop.gq/img/Notebook_Asus_X515EA-EJ711.webp",
+        "imagen": "./img/Notebook_Asus_X515EA-EJ711.webp",
         "precio": "$119.990",
         "procesador": "Intel Core i3 1115g4",
         "ram": "8GB DDR4",
@@ -166,7 +166,7 @@
     {
         "titulo": "Notebook Bangho Max L4 I1 F",
         "tipo": "notebook",
-        "imagen": "https://mastershop.gq/img/Notebook_Bangho_Max_L4_I1.webp",
+        "imagen": "./img/Notebook_Bangho_Max_L4_I1.webp",
         "precio": "$92.990",
         "procesador": "Intel Celeron 5205U",
         "ram": "4GB DDR4",
@@ -178,7 +178,7 @@
     {
         "titulo": "Notebook Gigabyte Aorus 15",
         "tipo": "notebook",
-        "imagen": "https://mastershop.gq/img/NOTEBOOK_GIGABYTE_AORUS_15-removebg-preview.webp",
+        "imagen": "./img/NOTEBOOK_GIGABYTE_AORUS_15-removebg-preview.webp",
         "precio": "$584.990",
         "procesador": "Intel Core i7 12700H",
         "ram": "16GB DDR4",
@@ -190,7 +190,7 @@
     {
         "titulo": "Notebook HP 245 G8",
         "tipo": "notebook",
-        "imagen": "https://mastershop.gq/img/NOTEBOOK_HP_245_G8-removebg-preview.webp",
+        "imagen": "./img/NOTEBOOK_HP_245_G8-removebg-preview.webp",
         "precio": "$179.990",
         "procesador": "Ryzen 5 5500U",
         "ram": "8GB DDR4",
@@ -202,7 +202,7 @@
     {
         "titulo": "Notebook Lenovo V15 Pentium",
         "tipo": "notebook",
-        "imagen": "https://mastershop.gq/img/Notebook_Lenovo_V15_Pentium.webp",
+        "imagen": "./img/Notebook_Lenovo_V15_Pentium.webp",
         "precio": "$136.989",
         "procesador": "Intel pentium Gold 5405U",
         "ram": "4GB DDR4",
@@ -214,7 +214,7 @@
     {
         "titulo": "Notebook XPG Xenia 15",
         "tipo": "notebook",
-        "imagen": "https://mastershop.gq/img/Notebook_XPG_Xenia_15.webp",
+        "imagen": "./img/Notebook_XPG_Xenia_15.webp",
         "precio": "$499.990",
         "procesador": "Intel core i7 11800H",
         "ram": "32GB DDR4",
@@ -226,7 +226,7 @@
     {
         "titulo": "Ryzen 3 4100",
         "tipo": "ryzen",
-        "imagen": "https://mastershop.gq/img/Ryzen_3_4100.webp",
+        "imagen": "./img/Ryzen_3_4100.webp",
         "precio": "$23.990",
         "cantidadDeNucleos": "4",
         "frecuencia": "3,8 GHz",
@@ -240,7 +240,7 @@
     {
         "titulo": "Ryzen 5 4500",
         "tipo": "ryzen",
-        "imagen": "https://mastershop.gq/img/Ryzen_5_4500.webp",
+        "imagen": "./img/Ryzen_5_4500.webp",
         "precio": "$28.990",
         "cantidadDeNucleos": "6",
         "frecuencia": "3,6 GHz",
@@ -254,7 +254,7 @@
     {
         "titulo": "Ryzen 5 5600X",
         "tipo": "ryzen",
-        "imagen": "https://mastershop.gq/img/Ryzen_5_5600x.webp",
+        "imagen": "./img/Ryzen_5_5600x.webp",
         "precio": "$50.990",
         "cantidadDeNucleos": "6",
         "frecuencia": "3,7 GHz",
@@ -268,7 +268,7 @@
     {
         "titulo": "Ryzen 5 7600X",
         "tipo": "ryzen",
-        "imagen": "https://mastershop.gq/img/Ryzen_5_7600X.webp",
+        "imagen": "./img/Ryzen_5_7600X.webp",
         "precio": "$78.990",
         "cantidadDeNucleos": "6",
         "frecuencia": "4,7 GHz",
@@ -282,7 +282,7 @@
     {
         "titulo": "Ryzen 7 5800X",
         "tipo": "ryzen",
-        "imagen": "https://mastershop.gq/img/Ryzen_7_5800X.webp",
+        "imagen": "./img/Ryzen_7_5800X.webp",
         "precio": "$99.990",
         "cantidadDeNucleos": "8",
         "frecuencia": "3,8 GHz",
@@ -296,7 +296,7 @@
     {
         "titulo": "Ryzen 9 5900X",
         "tipo": "ryzen",
-        "imagen": "https://mastershop.gq/img/Ryzen_9_5900X.webp",
+        "imagen": "./img/Ryzen_9_5900X.webp",
         "precio": "$105.990",
         "cantidadDeNucleos": "12",
         "frecuencia": "3,7 GHz",
@@ -310,7 +310,7 @@
     {
         "titulo": "Ryzen 9 7950X",
         "tipo": "ryzen",
-        "imagen": "https://mastershop.gq/img/Ryzen_9_7950X.webp",
+        "imagen": "./img/Ryzen_9_7950X.webp",
         "precio": "$189.990",
         "cantidadDeNucleos": "12",
         "frecuencia": "3,7 GHz",
