@@ -8,25 +8,25 @@ const firstCartItems = document.querySelectorAll('.shoppingCartItem');
 // Elementos precargados del carrito para cuando se carga la página
 
 // Botón eliminar item
-var itemDeleteButtons = document.querySelectorAll('.btn-delete')
+let itemDeleteButtons = document.querySelectorAll('.btn-delete')
 itemDeleteButtons.forEach((itemDeleteButton) => {
     itemDeleteButton.addEventListener('click', itemDeleteButtonClicked);
 })
 
 // Botón aumentar cantidad
-var moreValueInput = document.querySelectorAll('.moreValueInput');
+let moreValueInput = document.querySelectorAll('.moreValueInput');
 moreValueInput.forEach((button) => {
     button.addEventListener('click', moreValueInputClicked);
 });
 
 // Botón disminuir cantidad
-var lessValueInput = document.querySelectorAll('.lessValueInput');
+let lessValueInput = document.querySelectorAll('.lessValueInput');
 lessValueInput.forEach((button) => {
     button.addEventListener('click', lessValueInputClicked);
 })
 
 // Texto carrito vacío
-var nothingPart = document.querySelector('#cartNothingPart');
+let nothingPart = document.querySelector('#cartNothingPart');
 if (firstCartItems.length == 0) {
     nothingPart.innerHTML = `<h2>No hay nada en su carrito.</h2>`;
     cartItemsContainer.style.marginTop = '0'
@@ -155,7 +155,7 @@ function updateCartTotal() {
         button.addEventListener('click', moreValueInputClicked);
     });
 
-    var lessValueInput = document.querySelectorAll('.lessValueInput');
+    let lessValueInput = document.querySelectorAll('.lessValueInput');
     lessValueInput.forEach((button) => {
         button.addEventListener('click', lessValueInputClicked);
     })

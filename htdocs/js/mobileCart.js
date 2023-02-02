@@ -40,7 +40,7 @@ setTimeout(() => {
         button.addEventListener('click', moreValueInputClicked);
     });
 
-    var lessValueInput = document.querySelectorAll('.lessValueInput');
+    let lessValueInput = document.querySelectorAll('.lessValueInput');
     lessValueInput.forEach((button) => {
         button.addEventListener('click', lessValueInputClicked);
     });
