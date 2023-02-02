@@ -154,6 +154,21 @@ main #itemFunctions #functionsCont #addToCartCont #addToCart:active {
   color: white;
 }
 
-#litografia, #cantidadDeNucleos, #frecuencia, #cache, #cacheL1, #cacheL2, #cacheL3, #velocidadDelBus, #TDP, #tamañoDeMemoriaMaximo, #procesador, #ram, #almacenamiento, #pantalla, #graficos, #camara {
+#litografia,
+#cantidadDeNucleos,
+#frecuencia,
+#cache,
+#cacheL1,
+#cacheL2,
+#cacheL3,
+#velocidadDelBus,
+#TDP,
+#tamañoDeMemoriaMaximo,
+#procesador,
+#ram,
+#almacenamiento,
+#pantalla,
+#graficos,
+#camara {
   display: none;
 }/*# sourceMappingURL=products.css.map */
