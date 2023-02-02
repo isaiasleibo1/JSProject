@@ -34,10 +34,8 @@ request.onload = () => {
     const procesadoresJSON = request.response;
 
     for(let i = 0; i < procesadoresJSON.length; i++) {
-        if (localStorage.getItem('item') == procesadoresJSON[i].titulo) {
-            item = procesadoresJSON[i];
-            tipo = procesadoresJSON[i].tipo;
-        }
+        let url = procesadoresJSON[i].titulo.replace(/ /g, '-');
+        console.log(location.pathname)
     }
 
     itemTitle.textContent = item.titulo;
