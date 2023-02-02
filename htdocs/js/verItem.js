@@ -1,4 +1,4 @@
-setTimeout(() => {
+
 
     const itemTitle = document.querySelector("#itemTitle");
     const itemPrice = document.querySelector("#itemPrice");
@@ -33,6 +33,7 @@ setTimeout(() => {
     request.onload = () => {
         let item;
         let tipo;
+        let enlaceValido = false;
         const procesadoresJSON = request.response;
 
         for (let i = 0; i < procesadoresJSON.length; i++) {
@@ -40,10 +41,13 @@ setTimeout(() => {
             if (location.pathname.includes(url)) {
                 item = procesadoresJSON[i];
                 tipo = procesadoresJSON[i].tipo;
+                enlaceValido = true;
                 console.log(1)
-            } else {
-                console.log(2)
             }
+        }
+
+        if(!enlaceValido) {
+            location.href = 'https://mastershop.gq/error/404'
         }
 
         itemTitle.textContent = item.titulo;
@@ -134,5 +138,3 @@ setTimeout(() => {
             tamañoDeMemoriaMaximo.style.display = 'none';
         }
     }
-
-}, 10)
