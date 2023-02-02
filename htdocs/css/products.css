@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer {
   margin-top: 16px;
 }
@@ -151,4 +152,8 @@ main #itemFunctions #functionsCont #addToCartCont #addToCart:active {
 }
 #cartAlert p {
   color: white;
+}
+
+#litografia, #cantidadDeNucleos, #frecuencia, #cache, #cacheL1, #cacheL2, #cacheL3, #velocidadDelBus, #TDP, #tamañoDeMemoriaMaximo, #procesador, #ram, #almacenamiento, #pantalla, #graficos, #camara {
+  display: none;
 }/*# sourceMappingURL=products.css.map */
