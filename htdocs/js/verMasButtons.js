@@ -6,6 +6,6 @@ verMasButtons.forEach((button) => {
         const title = target.parentElement.querySelector('.item-title');
         localStorage.setItem('item', title.textContent);
 
-        location.href = './producto';
+        location.href = './producto/hola';
     })
 })
