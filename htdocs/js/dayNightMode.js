@@ -1,6 +1,6 @@
 let pointOrDoublePoint;
 
-if (location.pathname.includes('error') || location.pathname.includes('products')) {
+if (location.pathname.includes('error') || location.pathname.includes('producto')) {
     pointOrDoublePoint = '..';
 } else {
     pointOrDoublePoint = '.';
