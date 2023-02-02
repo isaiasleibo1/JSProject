@@ -1,5 +1,5 @@
 setTimeout(() => {
-    
+
     const itemTitle = document.querySelector("#itemTitle");
     const itemPrice = document.querySelector("#itemPrice");
     const itemImage = document.querySelector('#imageCont');
@@ -40,8 +40,9 @@ setTimeout(() => {
             if (location.pathname.includes(url)) {
                 item = procesadoresJSON[i];
                 tipo = procesadoresJSON[i].tipo;
+                console.log(1)
             } else {
-                location.href = 'https://mastershop.gq/error/404'
+                console.log(2)
             }
         }
 
