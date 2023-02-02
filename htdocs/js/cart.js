@@ -222,7 +222,7 @@ function cartButtonClicked() {
         } else if (cartItems.length >= 1) {
             const pathname = window.location.pathname;
 
-            if (pathname.includes('products') || pathname.includes('error')) {
+            if (pathname.includes('producto') || pathname.includes('error')) {
                 window.open("../mobileCart", "_self")
             } else {
                 window.open("./mobileCart", "_self");
