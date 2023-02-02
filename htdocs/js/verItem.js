@@ -40,7 +40,6 @@ request.onload = () => {
             item = procesadoresJSON[i];
             tipo = procesadoresJSON[i].tipo;
             enlaceValido = true;
-            console.log(1)
         }
     }
 

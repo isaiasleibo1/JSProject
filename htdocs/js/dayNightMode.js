@@ -16,9 +16,6 @@ setTimeout(() => {
     dayNightStyle = document.querySelector('#dayNightStyle');
 }, 1)
 
-
-console.log(createElement);
-
 const dayNightButton = document.querySelector('#dayNightButton');
 const dayNightButtonMobile = document.querySelector('#dayNightButtonMobile')
 
