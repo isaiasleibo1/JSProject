@@ -2,4 +2,4 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-RewriteRule ^producto/(.*)$ /producto.html [L]
+RewriteRule ^hola$ galeria.html [NC]
