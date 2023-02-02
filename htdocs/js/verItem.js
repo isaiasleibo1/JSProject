@@ -35,7 +35,10 @@ request.onload = () => {
 
     for(let i = 0; i < procesadoresJSON.length; i++) {
         let url = procesadoresJSON[i].titulo.replace(/ /g, '-');
-        console.log(location.pathname)
+        if (location.pathname.includes(url)) {
+            item = procesadoresJSON[i];
+            tipo = procesadoresJSON[i].tipo;
+        }
     }
 
     itemTitle.textContent = item.titulo;
