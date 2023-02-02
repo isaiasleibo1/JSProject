@@ -1,6 +1,6 @@
 const itemTitle = document.querySelector("#itemTitle");
 const itemPrice = document.querySelector("#itemPrice");
-const itemImage = document.querySelector('.item-img');
+const itemImage = document.querySelector('#imageCont');
 const pageTitle = document.querySelector('#pageTitle');
 const pageIcon = document.querySelector('#pageIcon');
 
@@ -43,7 +43,7 @@ request.onload = () => {
     itemTitle.textContent = item.titulo;
     pageTitle.textContent = item.titulo;
     itemPrice.textContent = item.precio;
-    itemImage.src = item.imagen;
+    itemImage.innerHTML = `<img class="item-img" src="${item.imagen}">`;
     pageIcon.outerHTML = `<link id="pageIcon" rel="shortcut icon" href="${item.imagen}">`
 
 
