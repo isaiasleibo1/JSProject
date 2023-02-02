@@ -38,6 +38,8 @@ request.onload = () => {
         if (location.pathname.includes(url)) {
             item = procesadoresJSON[i];
             tipo = procesadoresJSON[i].tipo;
+        } else {
+            location.href = 'https://mastershop.gq/error/404'
         }
     }
 
