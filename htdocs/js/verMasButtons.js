@@ -5,7 +5,8 @@ verMasButtons.forEach((button) => {
         const target = event.target;
         const title = target.parentElement.querySelector('.item-title');
         localStorage.setItem('item', title.textContent);
+        const url = title.textContent.replace(/ /g, '-');
 
-        location.href = './producto/hola';
+        location.href = `./producto/${url}`;
     })
 })
