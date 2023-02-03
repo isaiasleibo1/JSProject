@@ -14,6 +14,7 @@ const dayNightButtonMobile = document.querySelector('#dayNightButtonMobile')
 
 if (!localStorage.getItem('tema')) {
     localStorage.setItem('tema', 'moon');
+    console.log(1);
 } else {
     if (localStorage.getItem('tema').includes('sun')) {
         dayNightStyle.href = '#';
