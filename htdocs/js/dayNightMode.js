@@ -6,15 +6,8 @@ if (location.pathname.includes('error') || location.pathname.includes('producto'
     pointOrDoublePoint = '.';
 }
 
-const createElement = document.createElement("link");
 
-document.head.append(createElement);
-createElement.outerHTML = '<link rel="stylesheet" id="dayNightStyle">';
-
-let dayNightStyle;
-setTimeout(() => {
-    dayNightStyle = document.querySelector('#dayNightStyle');
-}, 1)
+let dayNightStyle = document.querySelector('#dayNightStyle');
 
 const dayNightButton = document.querySelector('#dayNightButton');
 const dayNightButtonMobile = document.querySelector('#dayNightButtonMobile')
@@ -23,17 +16,13 @@ if (!localStorage.getItem('tema')) {
     localStorage.setItem('tema', 'sun');
 } else {
     if (localStorage.getItem('tema').includes('sun')) {
-        setTimeout(() => {
-            dayNightStyle.href = '#';
-        }, 2)
+        dayNightStyle.href = '#';
 
 
     } else if (localStorage.getItem('tema').includes('moon')) {
         dayNightButton.innerHTML = dayNightButton.innerHTML.replace('sun', localStorage.getItem('tema'));
         dayNightButtonMobile.innerHTML = dayNightButtonMobile.innerHTML.replace('sun', localStorage.getItem('tema'));
-        setTimeout(() => {
-            dayNightStyle.href = `${pointOrDoublePoint}/css/dayNight.css`;
-        }, 2)
+        dayNightStyle.href = `${pointOrDoublePoint}/css/dayNight.css`;
 
     } else {
         throw new Error('no')
