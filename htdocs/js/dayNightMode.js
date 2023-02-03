@@ -18,13 +18,12 @@ if (!localStorage.getItem('tema')) {
 } else {
     if (localStorage.getItem('tema').includes('sun')) {
         dayNightStyle.href = '#';
+        dayNightButton.innerHTML = dayNightButton.innerHTML.replace('sun', localStorage.getItem('tema'));
+        dayNightButtonMobile.innerHTML = dayNightButtonMobile.innerHTML.replace('sun', localStorage.getItem('tema'));
 
 
     } else if (localStorage.getItem('tema').includes('moon')) {
-        dayNightButton.innerHTML = dayNightButton.innerHTML.replace('sun', localStorage.getItem('tema'));
-        dayNightButtonMobile.innerHTML = dayNightButtonMobile.innerHTML.replace('sun', localStorage.getItem('tema'));
         dayNightStyle.href = `${pointOrDoublePoint}/css/dayNight.css`;
-
     } 
 }
 
