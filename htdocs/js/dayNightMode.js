@@ -19,7 +19,7 @@ if (!localStorage.getItem('tema')) {
     if (localStorage.getItem('tema').includes('sun')) {
         dayNightStyle.href = '#';
         dayNightButton.innerHTML = dayNightButton.innerHTML.replace('moon', localStorage.getItem('tema'));
-        dayNightButtonMobile.innerHTML = dayNightButtonMobile.innerHTML.replace('sun', localStorage.getItem('tema'));
+        dayNightButtonMobile.innerHTML = dayNightButtonMobile.innerHTML.replace('moon', localStorage.getItem('tema'));
 
 
     } else if (localStorage.getItem('tema').includes('moon')) {
