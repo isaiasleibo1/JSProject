@@ -13,7 +13,7 @@ const dayNightButton = document.querySelector('#dayNightButton');
 const dayNightButtonMobile = document.querySelector('#dayNightButtonMobile')
 
 if (!localStorage.getItem('tema')) {
-    localStorage.setItem('tema', 'sun');
+    localStorage.setItem('tema', 'moon');
 } else {
     if (localStorage.getItem('tema').includes('sun')) {
         dayNightStyle.href = '#';
@@ -24,9 +24,7 @@ if (!localStorage.getItem('tema')) {
         dayNightButtonMobile.innerHTML = dayNightButtonMobile.innerHTML.replace('sun', localStorage.getItem('tema'));
         dayNightStyle.href = `${pointOrDoublePoint}/css/dayNight.css`;
 
-    } else {
-        throw new Error('no')
-    }
+    } 
 }
 
 dayNightButton.addEventListener('click', dayNightButtonClicked);
@@ -48,7 +46,5 @@ function dayNightButtonClicked() {
         dayNightStyle.href = '#';
         localStorage.setItem('tema', 'sun');
 
-    } else {
-        throw new Error('no existe un tema');
     }
 }
