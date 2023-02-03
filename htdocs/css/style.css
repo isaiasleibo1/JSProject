@@ -18,10 +18,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -75,10 +72,7 @@ header div#headerItemContainer .headerItem:active {
 }
 header div#headerItemContainer .mobileMenuOpener {
   font-size: 18px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 header div#headerItemContainer .mobileMenuCloser.headerItem {
   display: none;
@@ -86,10 +80,7 @@ header div#headerItemContainer .mobileMenuCloser.headerItem {
   scale: 1.2;
   margin-left: 8px;
   font-size: 20px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 header div#headerItemContainer #dayNightButton {
   scale: 1.1;
@@ -127,8 +118,6 @@ footer {
 }
 footer .social-media {
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -161,29 +150,12 @@ footer .social-media .social-media-app p {
   text-align: center;
 }
 
-@-webkit-keyframes mobileMenuOpen {
-  from {
-    left: -200px;
-  }
-  to {
-    left: 0;
-  }
-}
-
 @keyframes mobileMenuOpen {
   from {
     left: -200px;
   }
   to {
     left: 0;
-  }
-}
-@-webkit-keyframes mobileMenuClose {
-  from {
-    left: 0;
-  }
-  to {
-    left: -200px;
   }
 }
 @keyframes mobileMenuClose {
@@ -203,10 +175,8 @@ div#mobileMenu {
   top: 45px;
   padding: 10px;
   color: white;
-  -webkit-animation-duration: 200ms !important;
-          animation-duration: 200ms !important;
-  -webkit-animation-fill-mode: forwards !important;
-          animation-fill-mode: forwards !important;
+  animation-duration: 200ms !important;
+  animation-fill-mode: forwards !important;
   border-bottom-right-radius: 6px;
 }
 div#mobileMenu .headerItem:hover {
@@ -216,15 +186,11 @@ div#mobileMenu .headerItem:active {
   transform: scale(0.97);
 }
 div#mobileMenu #mobileHeaderTitle {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 2px;
 }
 div#mobileMenu div.headerItem {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   align-items: center;
   background-color: rgb(51, 51, 51);
@@ -288,8 +254,6 @@ header .mobileMenuCloser {
 #formmain #form {
   background: linear-gradient(rgb(15, 15, 15), rgb(59, 59, 59));
   color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 40px auto;
   padding: 20px;
@@ -326,8 +290,6 @@ header .mobileMenuCloser {
 }
 #formmain #form form #enviar {
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-top: 5px;
@@ -340,6 +302,7 @@ header .mobileMenuCloser {
   position: relative;
   font-weight: 1000;
   font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: background 250ms;
   overflow: hidden;
@@ -355,6 +318,7 @@ header .mobileMenuCloser {
   background: #212121;
   z-index: -1;
   border-radius: 10px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
 }
@@ -374,8 +338,7 @@ header .mobileMenuCloser {
   justify-items: center;
 }
 #images_container img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 31vw;
   height: 300px;
   margin-bottom: 26px;
@@ -440,8 +403,6 @@ header .mobileMenuCloser {
 
 .itemsSubContainer.carouselSimple {
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 2em;
@@ -475,8 +436,7 @@ header .mobileMenuCloser {
   margin-bottom: 10px;
   width: 100px;
   height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .itemsSubContainer.carouselSimple .itemsContainer .card .item .item-title {
   font-weight: 100;
@@ -635,8 +595,6 @@ header .mobileMenuCloser {
 
 .itemsSubContainer.carouselWithDescription {
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 2em;
@@ -674,8 +632,7 @@ header .mobileMenuCloser {
   margin-bottom: 0px;
   width: 120px;
   height: 120px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .itemsSubContainer.carouselWithDescription .itemsContainer .card .item section .item-title {
   margin-top: 3px;
@@ -788,8 +745,6 @@ header .mobileMenuCloser {
   .itemsSubContainer.carouselWithDescription .itemsContainer .item article {
     margin: 0 auto !important;
     width: calc(33.3333vw - 40px) !important;
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
     height: fit-content !important;
   }
   .itemsSubContainer.carouselWithDescription .itemsContainer .item article li {
@@ -813,8 +768,6 @@ header .mobileMenuCloser {
 }
 
 .carouselContainer {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -832,10 +785,8 @@ header .mobileMenuCloser {
   top: -379px;
   right: 20px;
   border-radius: 1em;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   z-index: 3;
 }
 #cart #closeCart {
@@ -880,8 +831,6 @@ header .mobileMenuCloser {
   justify-content: center;
   align-items: center;
   background-color: rgb(10, 10, 10);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 5px;
   margin: auto 0;
@@ -908,8 +857,6 @@ header .mobileMenuCloser {
   transform: scale(1);
 }
 #cart #cartDownPart #totalContainer {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   color: white;
   background-color: rgb(10, 10, 10);
@@ -942,8 +889,6 @@ header .mobileMenuCloser {
 }
 #cart #cartNothingPart {
   color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-top: 35px;
@@ -954,28 +899,12 @@ header .mobileMenuCloser {
   margin-top: 25px;
   scroll-behavior: smooth;
 }
-@-webkit-keyframes cartOpen {
-  from {
-    top: -379px;
-  }
-  to {
-    top: 28px;
-  }
-}
 @keyframes cartOpen {
   from {
     top: -379px;
   }
   to {
     top: 28px;
-  }
-}
-@-webkit-keyframes cartClose {
-  from {
-    top: 28px;
-  }
-  to {
-    top: -379px;
   }
 }
 @keyframes cartClose {
@@ -1025,8 +954,7 @@ header .mobileMenuCloser {
 #cart .shoppingCartItem img {
   width: 45px;
   height: 45px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   background: linear-gradient(rgb(26, 26, 26), rgb(53, 53, 53));
   padding: 7px;
   border-radius: 10px;
@@ -1059,8 +987,6 @@ header .mobileMenuCloser {
   transition: all 200ms;
 }
 #cart .shoppingCartItem .moreValueInput p, #cart #cartMain .shoppingCartItem :nth-child(5) .lessValueInput p, #cartMain #cart .shoppingCartItem :nth-child(5) .lessValueInput p, #cart .shoppingCartItem .lessValueInput p {
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
 }
 #cart .shoppingCartItem .moreValueInput:hover, #cart .shoppingCartItem .lessValueInput:hover {
@@ -1105,8 +1031,6 @@ header .mobileMenuCloser {
 #cartMain {
   display: grid;
   justify-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   overflow-x: scroll;
 }
@@ -1137,8 +1061,7 @@ header .mobileMenuCloser {
   padding: 5px;
   margin: 0 auto;
   border-radius: 1em;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   grid-area: img;
   position: relative;
   left: 0;
@@ -1156,8 +1079,6 @@ header .mobileMenuCloser {
   grid-area: price;
 }
 #cartMain .shoppingCartItem .input-container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 8px auto;
   grid-area: input;
@@ -1175,8 +1096,6 @@ header .mobileMenuCloser {
 }
 #cartMain .shoppingCartItem :nth-child(5) {
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-top: 5px;
@@ -1195,8 +1114,6 @@ header .mobileMenuCloser {
   transition: all 200ms;
 }
 #cartMain .shoppingCartItem :nth-child(5) .moreValueInput p, #cartMain .shoppingCartItem :nth-child(5) .lessValueInput p {
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
 }
 #cartMain .shoppingCartItem :nth-child(5) .moreValueInput:hover, #cartMain .shoppingCartItem :nth-child(5) .lessValueInput:hover {
@@ -1211,8 +1128,6 @@ header .mobileMenuCloser {
 }
 #cartMain .shoppingCartItem :nth-child(6) {
   margin: 0 auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 7px;
   grid-area: delete;
@@ -1355,8 +1270,6 @@ header .mobileMenuCloser {
   left: 0;
   right: 0;
   width: 260px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(56, 56, 56);
   border-radius: 1em;
@@ -1369,8 +1282,6 @@ header .mobileMenuCloser {
 #cartBuy #cartBuyCloser {
   color: red;
   position: absolute;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   right: 8px;
   top: 8px;
@@ -1397,8 +1308,6 @@ header .mobileMenuCloser {
 #cartBuy button {
   background-color: white;
   font-family: Montserrat;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-weight: bolder;
   border-radius: 8px;
@@ -1415,8 +1324,6 @@ header .mobileMenuCloser {
 
 @media screen and (max-width: 820px) {
   #filterContainer {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     margin-left: calc(50% - 108.1px) !important;
   }
@@ -1435,8 +1342,7 @@ header .mobileMenuCloser {
 #intelCheckbox img {
   width: 100px;
   height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
   padding: 2px;
 }

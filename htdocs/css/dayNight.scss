@@ -51,3 +51,9 @@ body {
 #cardSubmit {
     color: black;
 }
+
+#images_container {
+    img {
+        box-shadow: 5px 5px 5px #141414, -5px -5px 5px #242424 !important;
+    }
+}
