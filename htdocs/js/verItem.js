@@ -44,7 +44,7 @@ request.onload = () => {
     }
 
     if (!enlaceValido) {
-        location.href = 'https://mastershop.gq/error/404'
+        location.href = 'https://mastershop.gq/error/404';
     }
 
     itemTitle.textContent = item.titulo;

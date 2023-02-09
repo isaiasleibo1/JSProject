@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: nevis
+font link: http://tenbytwenty.com/?xxxx_posts=nevis
+font author: Ten by Twenty
+font author site: http://tenbytwenty.com/
+
+
+icon designer: Edward Boatman
+icon designer link: /edward
+        
+{"bg":"#EAEDF9","icon-gradient-0":"#395ECA","icon-gradient-1":"#848BD8","font":"#202A4F","slogan":"#343e63"}
+      

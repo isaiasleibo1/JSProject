@@ -1,3 +1,30 @@
+<?php
+    $sever = 'db4free.net';
+    $username = 'isaiasleibo';
+    $password = 'Isaias!2021';
+    $dbname = 'mastershop_gq';
+
+    $conn = mysqli_connect($sever, $username, $password, $dbname);
+
+    if(!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    } 
+
+    $nombre = $_POST["nombre"];
+    $apellido = $_POST["apellido"];
+    $email = $_POST["email"];
+    $comentario = $_POST["comentario"];
+
+    $sql = "INSERT INTO contacto (nombre, apellido, email, comentario) VALUES ('$nombre', '$apellido', '$email', '$comentario')";
+
+    if ($nombre != "" & $apellido != "" & $email != "" & $comentario != "") {
+      if(!mysqli_query($conn, $sql)) {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+      }
+    }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,13 +38,15 @@
     <!-- CSS -->
   <link rel="stylesheet" href="./css/dayNight.css" id="dayNightStyle">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/error.css">
   <!-- Título -->
-  <title>Galería - MasterShop</title>
+  <title>Formulario Enviado</title>
 </head>
 
 <body>
-
   <header>
+
+
     <div id="headerItemContainer">
       <div class="mobileMenuOpener headerItem">
         <p>
@@ -49,12 +78,12 @@
           <i class="fa-solid fa-envelope"></i>Contacto
         </p>
       </div>
-      <div class="headerItem pageRedirect">
+      <div class="headerItem pageRedirect" onclick="location.href='./galeria'">
         <p>
           <i class="fa-solid fa-camera"></i>Galería
         </p>
       </div>
-      <!-- Boton para abrir carrito -->
+      <!-- Cart Button Opener -->
       <div id="cartButtonContainer" class="headerItem">
         <div id="cartBubble"></div>
         <div id="cartButton">
@@ -66,18 +95,19 @@
     </div>
   </header>
 
-  <!-- Carrito -->
+  <!-- Cart -->
   <div id="cart">
-    <div id="closeCart">
-      <i class="fa-solid fa-xmark fa-lg"></i>
+    <div id="closeCart"><i class="fa-solid fa-xmark fa-lg"></i></div>
+    <div id="cartTitle">
+      <h3>Carrito</h3>
     </div>
-    <!-- Texto carrito vacío -->
+    <!-- Cart Empty -->
     <div id="cartNothingPart">
       <h2>No hay nada en su carrito.</h2>
     </div>
-    <!-- Items del carrito -->
+    <!-- Cart Items -->
     <div id="cartItemsContainer"></div>
-    <!-- parte de abajo del carrito -->
+    <!-- Cart Down Part (Buttons and Total) -->
     <div id="cartDownPart">
       <div id="cartArrows">
         <h2 id="cartItemCounter">Items:</h2>
@@ -90,7 +120,6 @@
           </button>
         </div>
       </div>
-      <!-- Total del carrito -->
       <div id="totalContainer">
         <p id="totalText">Total</p>
         <p id="shopping-cart-total">$0</p>
@@ -99,7 +128,6 @@
     </div>
   </div>
 
-  <!-- Menu header para celulares -->
   <div id="mobileMenu">
     <div class="headerItem pageRedirect" onclick="location.href='.'">
       <p>
@@ -116,7 +144,7 @@
         <i class="fa-solid fa-envelope"></i>Contacto
       </p>
     </div>
-    <div class="headerItem pageRedirect">
+    <div class="headerItem pageRedirect" onclick="location.href='./galeria'">
       <p>
         <i class="fa-solid fa-camera"></i>Galería
       </p>
@@ -128,15 +156,11 @@
       </p>
     </div>
     <h2 id="mobileHeaderTitle">MasterShop</h2>
+
   </div>
 
-  <main id="images_container">
-    <img src="./img/otherimg/1.jpeg" alt="">
-    <img src="./img/otherimg/2.jpeg" alt="">
-    <img src="./img/otherimg/3.jpg" alt="">
-    <img src="./img/otherimg/4.jpeg" alt="">
-    <img src="./img/otherimg/5.jpg" alt="">
-    <img src="./img/otherimg/6.jpg" alt="">
+  <main id="productMain">
+    <h1 style="text-align: center;">Formulario Enviado</h1>
   </main>
 
   <footer>
@@ -145,6 +169,7 @@
         <img class="item-img" src="./img/instagram.webp" alt="Instagram">
         <p>Instagram</p>
       </div>
+
       <div class="social-media-app">
         <img class="item-img" src="./img/facebook.webp" alt="Facebook">
         <p>Facebook</p>
@@ -155,6 +180,7 @@
       </div>
     </div>
   </footer>
+
 
   <div class="cartAlert" id="cartAlert1"></div>
   <div class="cartAlert" id="cartAlert2"></div>
@@ -173,15 +199,15 @@
     <button id="cardSubmit">Comprar</button>
   </div>
 
-  <script src="./js/refreshPage.js"></script>
-  <script src="./js/cart.js"></script>
-  <script src="./js/mobileMenu.js"></script>
+
   <script src="https://kit.fontawesome.com/aaf7184bfe.js" crossorigin="anonymous"></script>
+  <script src="./js/refreshPage.js"></script>
+  <script src="./js/mobileMenu.js"></script>
+  <script src="./js/cart.js"></script>
   <script src="./js/alert.js"></script>
   <script src="./js/cardDiv.js"></script>
 
   <script src="./js/dayNightMode.js"></script>
-
 </body>
 
 </html>

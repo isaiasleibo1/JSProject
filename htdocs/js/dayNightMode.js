@@ -1,12 +1,3 @@
-let pointOrDoublePoint;
-
-if (location.pathname.includes('error') || location.pathname.includes('producto')) {
-    pointOrDoublePoint = '..';
-} else {
-    pointOrDoublePoint = '.';
-}
-
-
 let dayNightStyle = document.querySelector('#dayNightStyle');
 
 const dayNightButton = document.querySelector('#dayNightButton');
@@ -23,7 +14,7 @@ if (!localStorage.getItem('tema')) {
 
 
     } else if (localStorage.getItem('tema').includes('moon')) {
-        dayNightStyle.href = `${pointOrDoublePoint}/css/dayNight.css`;
+        dayNightStyle.href = `/css/dayNight.css`;
     } 
 }
 
@@ -37,7 +28,7 @@ function dayNightButtonClicked() {
     if (dayNightButton.innerHTML.includes('sun')) {
         dayNightButton.innerHTML = dayNightButton.innerHTML.replace('sun', 'moon');
         dayNightButtonMobile.innerHTML = dayNightButtonMobile.innerHTML.replace('sun', 'moon');
-        dayNightStyle.href = `${pointOrDoublePoint}/css/dayNight.css`;
+        dayNightStyle.href = `/css/dayNight.css`;
         localStorage.setItem('tema', 'moon');
 
     } else if (dayNightButton.innerHTML.includes('moon')) {
