@@ -21,18 +21,20 @@ const almacenamiento = document.querySelector('#almacenamiento');
 const pantalla = document.querySelector('#pantalla');
 const camara = document.querySelector('#camara');
 
+async function connectJSON() {
+    try {
+        const response = await fetch('/json/items.json');
+        const data = await response.json();
+        verItem(data);
+    } catch (err) {
+        console.log(err);
+    }
+}
 
-
-const request = new XMLHttpRequest();
-request.open('GET', '../json/items.json');
-request.responseType = 'json';
-request.send();
-
-request.onload = () => {
+function verItem(procesadoresJSON) {
     let item;
     let tipo;
     let enlaceValido = false;
-    const procesadoresJSON = request.response;
 
     for (let i = 0; i < procesadoresJSON.length; i++) {
         let url = procesadoresJSON[i].titulo.replace(/ /g, '-');
@@ -135,3 +137,5 @@ request.onload = () => {
         tamañoDeMemoriaMaximo.style.display = 'none';
     }
 }
+
+connectJSON();
